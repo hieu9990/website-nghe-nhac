@@ -1,0 +1,245 @@
+
+/* ===== CAI DAT CHUNG ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #10101c;
+    color: #f5f5f5;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+a {
+    color: #c4b5fd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* ===== THANH DIEU HUONG ===== */
+header {
+    background: #19172b;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #302b4d;
+}
+
+.logo {
+    color: #c4b5fd;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav a {
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c4b5fd;
+}
+
+.user-info {
+    color: #c4b5fd;
+    font-weight: bold;
+}
+
+/* ===== TRANG CHU ===== */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    margin: 25px auto;
+    max-width: 1200px;
+    background: linear-gradient(135deg, #35265e, #171b30);
+    border-radius: 18px;
+}
+
+.hero h1 {
+    color: #ddd2ff;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #dedcf0;
+    font-size: 17px;
+}
+
+/* ===== NOI DUNG ===== */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 25px;
+    background: #191827;
+    border-radius: 15px;
+}
+
+.content h1,
+.content h2 {
+    color: #c4b5fd;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    margin: 12px 0;
+}
+
+/* ===== FORM VA O TIM KIEM ===== */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 16px;
+    background: #242238;
+    color: #ffffff;
+    border: 1px solid #51476f;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #a78bfa;
+}
+
+form button,
+button {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button:hover,
+button:hover {
+    background: #7c3aed;
+}
+
+/* ===== DANH SACH BAI HAT ===== */
+.song-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.song-card {
+    background: #242238;
+    border: 1px solid #37314f;
+    padding: 18px;
+    border-radius: 14px;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+}
+
+.song-card:hover {
+    transform: translateY(-4px);
+    border-color: #8b5cf6;
+}
+
+.song-card img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.song-card h3 {
+    color: #ddd2ff;
+    font-size: 19px;
+}
+
+.song-card p {
+    color: #d0cede;
+    margin: 7px 0;
+}
+
+.song-card audio {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.song-card form {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+/* ===== LIEN KET VA NUT ===== */
+.content a {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.content button {
+    margin: 5px 0;
+}
+
+/* ===== CHAN TRANG ===== */
+footer {
+    margin-top: 45px;
+    padding: 30px 15px;
+    text-align: center;
+    background: #19172b;
+    color: #c9c5d8;
+    border-top: 1px solid #302b4d;
+}
+
+footer h3 {
+    color: #c4b5fd;
+    margin-bottom: 8px;
+}
+
+/* ===== DIEN THOAI ===== */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .hero {
+        margin: 15px;
+        padding: 45px 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        width: 94%;
+        padding: 18px;
+    }
+
+    .song-list {
+        grid-template-columns: 1fr;
+    }
+}
